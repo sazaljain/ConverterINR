@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.MaterialComponents.DayNight.Dialog.FixedSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/currency"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#56555555"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="45sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginEnd="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="40sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Currency Converter"
+            android:textColor="#FFEB3B"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:hint="Enter Value In Dollars"
+            android:inputType="textPersonName"
+            android:padding="20sp"
+            android:textColorHint="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:onClick="button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70sp"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="50sp"
+            android:text="Click to find INR" />
+    </LinearLayout>
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/dollar"-->
+    <!--        android:layout_width="261dp"-->
+    <!--        android:layout_height="52dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:background="#FDD18F"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Enter Currency in Dollars"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:text="Enter for INR"-->
+    <!--        app:backgroundTint="#3F51B5"-->
+    <!--        />-->
+
+</RelativeLayout>
